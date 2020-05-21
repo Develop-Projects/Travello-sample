@@ -54,14 +54,14 @@
 }
 
 #navbar .ico-brand {
-    color: #e09704;
     font-weight: 500;
     line-height: 50px;
 }
 
-#navbar .ico-brand .la {
+#navbar .ico-brand .la-luggage-cart {
     font-size: 22px;
     margin-right: 5px;
+    color: #e09704;
 }
 
 #navbar ul {
