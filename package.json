@@ -1,0 +1,22 @@
+{
+  "name": "travelo",
+  "version": "1.0.0",
+  "description": "A Simple Travelling Website",
+  "main": "./js/script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Develop-Projects/Travello-sample.git"
+  },
+  "author": "The Futurers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Develop-Projects/Travello-sample/issues"
+  },
+  "homepage": "https://github.com/Develop-Projects/Travello-sample#readme",
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}

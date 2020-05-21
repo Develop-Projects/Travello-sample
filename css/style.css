@@ -1,0 +1,288 @@
+.blur-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    filter: blur(5px);
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.opacity-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    filter: opacity(0.4);
+}
+
+.fade-image-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    filter: opacity(0.4);
+    background: url(../asset/travel.jpg) repeat-y center center;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: opacity(.1);
+    mask: linear-gradient(90deg, white 50%, transparent);
+    -webkit-mask: -webkit-linear-gradient(90deg, white 50%, transparent);
+}
+
+.icon {
+    color: #e09704;
+}
+
+.icon span {
+    color: black;
+}
+
+/* Page Navigation */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+#navbar.scroll-past {
+    background-color: white;
+    box-shadow: 0px 0px 3px #ddd;
+}
+
+#navbar .ico-brand {
+    color: #e09704;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+#navbar .ico-brand .la {
+    font-size: 22px;
+    margin-right: 5px;
+}
+
+#navbar ul {
+    float: right;
+}
+
+#navbar ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 15px;
+    line-height: 50px;
+}
+
+#navbar ul li a {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    font-family: 'baloo paaji 2';
+    font-weight: 500;
+}
+
+#navbar .navmenu {
+    display: none;
+    float: right;
+    line-height: 50px;
+}
+
+#navbar [type=checkbox] {
+    display: none;
+}
+
+@media screen and (max-width: 671px) {
+    #navbar ul {
+        display: none;
+    }
+    #navbar .navmenu {
+        display: inline-block;
+    }
+    #navbar [type=checkbox]:checked ~ ul {
+        display: block;
+    }
+}
+
+/* Page Header Banner */
+#landing-page--header {
+    height: 100vh;
+    background: url(../asset/landpage.png) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#landing-page--header .--text {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    padding: 1rem 1.25rem;
+}
+
+#landing-page--header .--text h1 {
+    position: relative;
+    font-family: 'Operator Mono';
+    color: #f5f5f5;
+    text-align: center;
+}
+
+#landing-page--content .--user-react {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.4rem auto auto auto;
+}
+
+#landing-page--content .--user-react {
+    margin: 3rem 0px 0px 0px;
+}
+
+#landing-page--content .--user-react button {
+    width: 160px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    font-family: 'baloo paaji 2';
+    color: white;
+    transition: all ease-in .3s;
+}
+
+#landing-page--content .--user-react button:focus {
+    outline: none;
+}
+
+#landing-page--content .--user-react button:nth-child(1) {
+    position: relative;
+    margin-right: 10px;
+    z-index: 1;
+    background-color: #ffa500;
+}
+
+#landing-page--content .--user-react button:nth-child(1):hover {
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+    color: #ffa500;
+}
+
+#landing-page--content .--user-react button:nth-child(2) {
+    background-color: #1e90ff;
+    color: white;
+}
+
+#landing-page--content .--user-react button:nth-child(2):hover {
+    background-color: #1979da;
+}
+
+/* Intro Section */
+#intro-section,
+#offer-section,
+#sub-section {
+    padding-top: 5rem;
+    position: relative;
+    min-height: 600px;
+}
+
+#intro-section .container {
+    filter: opacity(1);
+    z-index: 10;
+}
+
+#intro-section .container header,
+#offer-section .container header,
+#sub-section .container header {
+    margin: 4rem auto;
+}
+
+#intro-section .container header h1,
+#offer-section .container header h1,
+#sub-section .container header h1 {
+    text-align: center;
+}
+
+#intro-section .container .intro-item [data-ico] {
+    font-size: 70px;
+    text-align: center;
+}
+
+.intro-item .intro-item--desc {
+    height: 60px;
+    text-align: center;
+}
+
+/* We Hire */
+#offer-section {
+    background-image: url(../asset/car_man.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left 20px;
+    height: fit-content;
+    max-height: fit-content;
+}
+
+#offer-section .--empty {
+    min-height: 400px;
+}
+
+@media (max-width: 1004px) {
+    #offer-section {
+        background-position: center 93px;
+    }
+}
+
+@media (max-width: 747px) {
+    #offer-section {
+        background-position: center 90px;
+    }
+    #offer-section .--empty {
+        min-height: 350px;
+    }
+}
+
+@media (max-width: 622px) {
+    #offer-section {
+        background-position: center 120px;
+    }
+    #offer-section .--empty {
+        min-height: 250px;
+    }
+}
+
+@media (max-width: 500px) {
+    #offer-section {
+        background-position: center 200px;
+    }
+    #offer-section .--empty {
+        min-height: 200px;
+    }
+}
+
+@media (max-width: 400px) {
+    #offer-section {
+        background-position: center 200px;
+    }
+    #offer-section .--empty {
+        min-height: 150px;
+    }
+}
+
+#offer-section .--section-content {
+    float: right;
+}
+
+/* Subscribe */
+#sub-section {
+    padding-top: 1rem;
+    min-height: 350px;
+    background-color: rgba(238, 238, 238, 0.39);
+    margin-top: 8rem;
+}
+
+#sub-section .container header {
+    margin: 1.8rem auto;
+}

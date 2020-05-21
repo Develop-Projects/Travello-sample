@@ -1,0 +1,9 @@
+# A transportation mimick website.
+
+# As project for the ____ team.
+
+** Content **
+- Landing page ✔
+- Login / Signup page
+- User Dashboard
+- Settings page
